@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ThemeProvider } from 'styled-components';
-import { LIGHT_THEME, FontsVTBGroup, DropdownProvider } from '@admiral-ds/react-ui';
 import App from './App';
+import { SystemThemeProvider } from './SystemThemeProvider';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={LIGHT_THEME}>
-      <DropdownProvider>
-        <FontsVTBGroup />
+    <SystemThemeProvider>
         <App />
-      </DropdownProvider>
-    </ThemeProvider>
+    </SystemThemeProvider>
   </React.StrictMode>,
 );
