@@ -1,0 +1,21 @@
+node_modules
+.DS_Store
+docs
+dist
+dist-ssr
+*.local
+*.log
+.idea
+storybook-static
+.npmrc
+admiral-ds-react-ui-*.tgz
+tsconfig.tsbuildinfo
+bun.lockb
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
